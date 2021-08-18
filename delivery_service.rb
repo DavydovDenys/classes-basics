@@ -35,13 +35,3 @@ class DeliveryService
     DeliveryService.availability
   end
 end
-
-car = Car.new
-bike =Bike.new
-transport = Transport.new
-delivery_service = DeliveryService.new
-
-p car.delivery_time(100)
-p bike.delivery_time(100)
-p car.delivery_speed_per_kg == bike.delivery_speed_per_kg
-p bike.delivery_speed_per_kg
