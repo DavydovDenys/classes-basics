@@ -5,8 +5,8 @@ class DeliveryService
   attr_reader :cars, :bikes
 
   def initialize
-    @cars  = Array.new(2) { Car.new }
-    @bikes = Array.new(3) { Bike.new }
+    @cars  = Array.new(Constants::CARS[:quantity]) { Car.new }
+    @bikes = Array.new(Constants::BIKES[:quantity]) { Bike.new }
   end
 
   def create_delivery(weight, distance)
