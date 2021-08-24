@@ -5,9 +5,7 @@ class Bike < Transport
   attr_reader :max_distance
 
   def initialize
-    @speed        = Constants::BIKES[:speed]
-    @max_weight   = Constants::BIKES[:max_weight]
+    super(Constants::BIKES[:max_weight], Constants::BIKES[:speed], true)
     @max_distance = Constants::BIKES[:max_distance]
-    @available    = true
   end
 end
